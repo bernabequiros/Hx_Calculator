@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Exercise3 extends Calculator {
+public class Exercise3 {
 
     /*
      * Ejercicio 03 – Hallar A+B+C+100
@@ -34,6 +34,13 @@ public class Exercise3 extends Calculator {
                     + exercise3(valueA, valueB, valueC));
 
         }
+
+    }
+
+    public static int exercise3(int n1, int n2, int n3) {
+        int result = Functions.addition(n1, n2) + Functions.addition(n3, 100);
+
+        return result;
 
     }
 }

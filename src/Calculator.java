@@ -20,7 +20,7 @@ Debe incluír las siguientes funciones​:
 Cada función debe poder ser ejecutada individualmente de las otras
 
 */
-public class Calculator extends Functions {
+public class Calculator {
     public static void main(String[] args) throws Exception {
         int number1, number2;
 
@@ -39,7 +39,7 @@ public class Calculator extends Functions {
                     System.out.println("Enter second number: ");
                     number2 = input.nextInt();
 
-                    System.out.println(number1 + " + " + number2 + " = " + addition(number1, number2));
+                    System.out.println(number1 + " + " + number2 + " = " + Functions.addition(number1, number2));
 
                     break;
 
@@ -51,7 +51,7 @@ public class Calculator extends Functions {
                     System.out.println("Enter second number: ");
                     number2 = input.nextInt();
 
-                    System.out.println(number1 + " - " + number2 + " = " + subtraction(number1, number2));
+                    System.out.println(number1 + " - " + number2 + " = " + Functions.subtraction(number1, number2));
 
                     break;
 
@@ -63,7 +63,7 @@ public class Calculator extends Functions {
                     System.out.println("Enter second number: ");
                     number2 = input.nextInt();
 
-                    System.out.println(number1 + " * " + number2 + " = " + multiplication(number1, number2));
+                    System.out.println(number1 + " * " + number2 + " = " + Functions.multiplication(number1, number2));
 
                     break;
 
@@ -75,7 +75,7 @@ public class Calculator extends Functions {
                     System.out.println("Enter second number: ");
                     number2 = input.nextInt();
 
-                    System.out.println(number1 + " / " + number2 + " = " + division(number1, number2));
+                    System.out.println(number1 + " / " + number2 + " = " + Functions.division(number1, number2));
 
                     break;
 
@@ -87,7 +87,7 @@ public class Calculator extends Functions {
                     System.out.println("Enter second number: ");
                     number2 = input.nextInt();
 
-                    System.out.println(number1 + " ^ " + number2 + " = " + power(number1, number2));
+                    System.out.println(number1 + " ^ " + number2 + " = " + Functions.power(number1, number2));
 
                     break;
 
@@ -99,7 +99,7 @@ public class Calculator extends Functions {
                     System.out.println("Enter second number: ");
                     number2 = input.nextInt();
 
-                    System.out.println("The square of " + number1 + " is  = " + square(number1));
+                    System.out.println("The square of " + number1 + " is  = " + Functions.square(number1));
                     break;
 
                 default:

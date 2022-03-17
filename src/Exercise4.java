@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Exercise4 extends Calculator {
+public class Exercise4 {
 
     /*
      * Ejercicio 04 – Hallar (a-b)(a+b)
@@ -27,10 +27,19 @@ public class Exercise4 extends Calculator {
             System.out.println("Enter second number: ");
             number2 = input.nextInt();
 
-            System.out.println("(" + number1 + "-" + number2 + ")x(" + number1 + "+" + number2 + ") = "
+            System.out.println("(" + number1 + "-" + number2 + ") x (" + number1 + "+" + number2 + ") = "
                     + exercise4(number1, number2));
 
         }
 
     }
+
+
+    public static int exercise4(int n1, int n2) {
+        int result = Functions.multiplication(Functions.subtraction(n1, n2), Functions.addition(n1, n2));
+
+        return result;
+
+    }
+
 }

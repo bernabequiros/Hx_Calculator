@@ -42,17 +42,6 @@ public class Functions {
 
     }
 
-    public static int exercise3(int n1, int n2, int n3) {
-        int result = addition(n1, n2) + addition(n3, 100);
 
-        return result;
 
-    }
-
-    public static int exercise4(int n1, int n2) {
-        int result = multiplication(subtraction(n1, n2), addition(n1, n2));
-
-        return result;
-
-    }
 }
